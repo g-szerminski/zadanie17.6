@@ -1,0 +1,23 @@
+{
+  "name": "zadanie17.6",
+  "version": "1.0.0",
+  "description": "17 - ExpressJS-ekspresowe tworzenie aplikacji w NodeJS<br>\r 17.6. Szablony HTML<br>\r Zadanie: Praktyczne wykorzystanie szablonów",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g-szerminski/zadanie17.6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/g-szerminski/zadanie17.6/issues"
+  },
+  "homepage": "https://github.com/g-szerminski/zadanie17.6#readme",
+  "dependencies": {
+    "pug": "^2.0.3"
+  }
+}
