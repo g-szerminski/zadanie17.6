@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        title="Hello Pug"
+        <style type="text/css">
+        include ../css/style.css
+    </style>
+    body
+    	include ./header.pug
+    	h3 Loging panel
+        p.loging#panel Please enter a password!
+        include form.pug
+        include ./footer.pug

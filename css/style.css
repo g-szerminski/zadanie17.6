@@ -1,0 +1,18 @@
+body {
+	text-align: center;
+    background: linear-gradient(190deg, green, blue);
+    color: #fff;
+    font-size: 20px;
+}
+
+form {
+	font-size: 30px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #FFF;
+}

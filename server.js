@@ -3,21 +3,20 @@ var app = express();
 
 app.set('view engine', 'pug');
 app.set('views','./views');
-app.use('/store', function(req, res, next){
-    console.log('Hej, jestem pośrednikiem między żądaniem a odpowiedzią!');
-    next();
+
+app.get('/', function(req, res){
+	res.render('index');
 });
 
-app.get('/', (req, res) => {
-	res.send('Hello World');
-});
-
-app.get('/store', function(req,res) {
-	res.send('To jest sklep');
-});
-
-app.get('/first-template', function(req, res) {
-    res.render('first-template');
+app.get('/auth/google', (req, res) => {
+	if (req.query.password === 'kodilla') {
+		res.redirect('https://kodilla.com');        
+	} else {
+		res.render('error', {
+			info: 'Wrong password',
+			url: 'http://localhost:3000/'
+		});
+	}
 });
 
 app.listen(3000);
