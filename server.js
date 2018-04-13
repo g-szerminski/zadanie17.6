@@ -5,14 +5,14 @@ app.set('view engine', 'pug');
 app.set('views','./views');
 
 app.get('/', function(req, res){
-	res.render('index');
+	res.render('content');
 });
 
 app.get('/auth/google', (req, res) => {
 	if (req.query.password === 'kodilla') {
 		res.redirect('https://kodilla.com');        
 	} else {
-		res.render('error', {
+		res.render('wrong', {
 			info: 'Wrong password',
 			url: 'http://localhost:3000/'
 		});

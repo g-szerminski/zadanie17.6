@@ -1,6 +1,6 @@
 body {
 	text-align: center;
-    background: linear-gradient(190deg, green, blue);
+    background: -webkit-linear-gradient(190deg, green, blue);
     color: #fff;
     font-size: 20px;
 }
